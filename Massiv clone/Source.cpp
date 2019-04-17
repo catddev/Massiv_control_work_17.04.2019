@@ -40,7 +40,7 @@ int main() {
 			cout << endl;
 			break;
 		case 2:
-			for (int i = 0; i < 6; i++)//why the same? f10 different
+			for (int i = 0; i < 6; i++)
 			{
 				arr[i].random();
 				cout << arr[i] << endl;
