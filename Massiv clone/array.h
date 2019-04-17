@@ -4,7 +4,9 @@
 #include<Windows.h>
 #include<ctime>
 #include<cstring>
+#include<string>
 #include<fstream>
+
 using namespace std;
 
 

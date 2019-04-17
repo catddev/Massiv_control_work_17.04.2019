@@ -79,7 +79,7 @@ void Array::print()
 
 int Array::max_el()
 {
-	int max = els[0];
+	int max = els[0];//or=-1; than > without=
 	for (int i = 0; i < size; i++)
 		if (els[i] >= max)
 			max = els[i];
@@ -89,7 +89,7 @@ int Array::max_el()
 
 int Array::min_el()
 {
-	int min = els[0];
+	int min = els[0];//or =13; than > without=
 	for (int i = 0; i < size; i++)
 		if (els[i] <= min)
 			min = els[i];
@@ -99,21 +99,24 @@ int Array::min_el()
 
 void Array::max_el_pos()
 {
-	int max = this->max_el();
+	string month[12] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun","July", "Aug", "Sept", "Oct", "Nov", "Dec"};
 
+	int max = this->max_el();
 	for (int i = 0; i < size; i++)
 		if (els[i] == max)
-			cout << i+1 << " ";
+			cout << month[i] << " ";
 	cout << endl;
 }
 
 void Array::min_el_pos()
 {
+	string month[12] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun","July", "Aug", "Sept", "Oct", "Nov", "Dec" };
+
 	int min = this->min_el();
 
 	for (int i = 0; i < size; i++)
 		if (els[i] == min)
-			cout << i+1 << " ";
+			cout << month[i] << " ";
 	cout << endl;
 }
 
