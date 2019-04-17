@@ -120,7 +120,7 @@ void Array::min_el_pos()
 	cout << endl;
 }
 
-int Array::sum()
+double Array::sum()
 {
 	int sum = 0;
 	for (int i = 0; i < size; i++)
@@ -130,10 +130,7 @@ int Array::sum()
 
 double Array::average()
 {
-	double average = 0;
-	for (int i = 0; i < size; i++)
-		average += els[i];
-	average /= size;
+	double average = sum()/size;
 	return average;
 }
 

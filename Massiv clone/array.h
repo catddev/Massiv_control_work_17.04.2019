@@ -76,7 +76,7 @@ public:
 	int min_el();
 	void max_el_pos();
 	void min_el_pos();
-	int sum();
+	double sum();
 	double average();
 	Array& random();
 
