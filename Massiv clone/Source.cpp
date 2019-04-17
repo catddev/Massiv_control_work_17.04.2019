@@ -1,12 +1,12 @@
 ﻿#include"array.h"
 
 int main() {
-	srand(time(NULL));
+	srand(time(NULL));//лучше всегда в main, а не в реализации метода, даже если только для одной функции нужен srand
 	ifstream in_file("in.txt");
 	Array arr[6];
 
-	Array zero(12, 0);
-	Array twelve(12, 12);
+	Array zero(0);
+	Array twelve(12);
 	Array amount(zero);
 	Array difference(zero);
 

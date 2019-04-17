@@ -4,18 +4,12 @@
 Array::Array()
 {
 	size = 12;
-	els = new int[12];//при создании массива по умолчанию сразу выделяем память под 12 оценок
+	els = new int[size];//при создании массива по умолчанию сразу выделяем память под 12 оценок
 }
 
-Array::Array(int size)
+Array::Array(int value)
 {
-	this->size = size;
-	els = new int[this->size];
-}
-
-Array::Array(int size, int value)
-{
-	this->size = size;
+	size = 12;
 	els = new int[size];
 	for (int i = 0; i < size; i++)
 		els[i] = value;
@@ -109,7 +103,7 @@ void Array::max_el_pos()
 
 	for (int i = 0; i < size; i++)
 		if (els[i] == max)
-			cout << i << " ";
+			cout << i+1 << " ";
 	cout << endl;
 }
 
@@ -119,7 +113,7 @@ void Array::min_el_pos()
 
 	for (int i = 0; i < size; i++)
 		if (els[i] == min)
-			cout << i << " ";
+			cout << i+1 << " ";
 	cout << endl;
 }
 

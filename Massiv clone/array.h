@@ -61,8 +61,7 @@ private:
 	int size;
 public:
 	Array();
-	Array(int size);
-	Array(int size, int value);
+	Array(int value);
 	Array(const Array& obj);
 	~Array();
 	int arrsize();
