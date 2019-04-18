@@ -137,7 +137,7 @@ double Array::average()
 Array& Array::random()
 {
 	for (int i = 0; i < size; i++)
-		els[i] = rand() % 12;
+		els[i] = rand() % 12;//or rand() % 5 + 8; чтобы от 5 до 12, а не от 0
 	return *this;
 }
 
